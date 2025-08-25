@@ -24,7 +24,7 @@
         <a href="produtos.php" class="btn btn-primary">Cadastrar produtos</a>
         <a href="consultadados" class="btn btn-primary">Consulta</a>
         <a href="" class="btn btn-primary">Exclusão</a>
-        <a href="" class="btn btn-primary">Alteração</a>
+        <a href="update.php" class="btn btn-primary">Alteração</a>
 
     </div>
 

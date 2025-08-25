@@ -33,7 +33,7 @@ if (isset($_SESSION['usuario'])) {
     <nav class="navbar bg-dark">
     <div class="container-fluid">
         <img src="../img/logo.png" height="50px" alt="">
-        <a class="navbar-brand text-light">Consulta de dados</a>
+        <a class="navbar-brand text-light">Exclusão de dados</a>
         <form class="d-flex" role="search">
         <h5 class="text-light"><?php echo $_SESSION['usuario'];?></h5>
         <a class="btn btn-outline-success mx-2 text-light" href="sair.php">Sair</a>
@@ -50,6 +50,7 @@ if (isset($_SESSION['usuario'])) {
                 <td>CPF</td>
                 <td>RG</td>
                 <td>Email</td>
+                <td>Ação</td>
             </tr>
             <?php
                 foreach ($dados as $key => $value) {
@@ -59,11 +60,12 @@ if (isset($_SESSION['usuario'])) {
                         echo "<td>". $dados[$key]["cpf"] ." </td>";
                         echo "<td>". $dados[$key]["rg"] ." </td>";
                         echo "<td>". $dados[$key]["email"] ." </td>";
+                        echo "<td> <a class='btn btn-danger' href='connbd.php?id=".$dados[$key]["id"]."&tp=excluir'>Excluir</a> </td>";
                     echo "</tr>";
                 }
                 
             ?>
-
+    
         </table>
     </div>
 
