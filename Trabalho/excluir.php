@@ -43,14 +43,6 @@ if (isset($_SESSION['usuario'])) {
     </nav>
 
     <div class="container mt-4">
-    <?php
-            if (isset($_SESSION['valida'])) {
-                echo $_SESSION['valida'];
-                $_SESSION['valida'] = null;
-            }
-        
-        ?>
-        
         <table class="table table-hover">
             <tr>
                 <td>Cod</td>
@@ -68,7 +60,7 @@ if (isset($_SESSION['usuario'])) {
                         echo "<td>". $dados[$key]["cpf"] ." </td>";
                         echo "<td>". $dados[$key]["rg"] ." </td>";
                         echo "<td>". $dados[$key]["email"] ." </td>";
-                        echo "<td> <a class='btn btn-danger' href='connbd.php?id=".$dados[$key]["id"]."&tp=alterar'>Excluir</a> </td>";
+                        echo "<td> <a class='btn btn-danger' href='connbd.php?id=".$dados[$key]["id"]."&tp=excluir'>Excluir</a> </td>";
                     echo "</tr>";
                 }
                 
