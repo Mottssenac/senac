@@ -6,40 +6,45 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro do produto</title>
+    <title>Reserva</title>
     <!-- link de vínculo do Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
-        <h2>Cadastro</h2>
+        <h2>Reservar</h2>
         <p>Preencha todas as informações corretamente:</p>
         <form action="dadosprodutos.php" method="post">
             <!-- Criação da primeira linha -->
             <div class="row">
                 <!-- criação da primeira coluna ocupando todo o espaço = 12 -->
                 <div class="col-md-12">
-                    <input type="text" class="form-control" name="nproduto" id="" placeholder="Nome do produto">
+                      <select name="bolo1" id="" class="form-select">
+                        <option value="">Tipos de Bolos 1kg</option>
+                        <option value="fn">Floresta Negra  R$ 80,00</option>
+                        <option value="ma">Morango do amor  R$ 95,00</option>
+                        <option value="n">Ninho  R$ 99,99 </option>
+                        <option value="p">Pistache  R$ 110,00</option>
+                        <option value="c">Chocolate  R$ 75,00</option>
+                    </select>
                 </div>
-            </div>
-            <!-- segunda linha -->
-            <div class="row mt-2">
-                <!-- primeira coluna da segunda linha -->
-                <div class="col-md-5">
-                    <input type="text" class="form-control" name="desproduto" id="" placeholder="Descrição">
+                <div class="col-md-12">
+                     <select name="bolo2" id="" class="form-select">
+                        <option value="">Tipos de Bolos 2kg</option>
+                        <option value="fn">Floresta Negra  R$ 150,00</option>
+                        <option value="ma">Morango do amor  R$ 170,00</option>
+                        <option value="n">Ninho  R$ 185,00 </option>
+                        <option value="p">Pistache  R$ 210,00</option>
+                        <option value="c">Chocolate  R$ 140,00</option>
+                    </select>
                 </div>
-                <div class="col-md-5">
-                    <input type="text" class="form-control" name="dono" id="" placeholder="Fornecedor">
+              
+                <div class="col-md-12">
+                    <input type="text" class="form-control" name="ex" id="" placeholder="Exigências">
                 </div>
-                <!-- segunda coluna da segunda linha -->
-                <div class="col-md-2">
-                    <input type="number" class="form-control" name="valor" id="" placeholder="Preço">
-                </div>
-                <!-- botao -->
                 <input type="submit" value="Cadastrar produto">
                 
             <?php
-            header('location:adm.php'); 
             ?>
                
             </div>
