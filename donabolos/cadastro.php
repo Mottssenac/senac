@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dona Bolos - Cadastro</title>
+    <title>Dona Bólos - Cadastro</title>
    
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -59,7 +59,7 @@
                 CADASTRO
             </h1>
             <p class="text-lg text-background-primary mb-12 uppercase opacity-80">
-                Dona Bolos
+                Dona Bólos
             </p>
 
            

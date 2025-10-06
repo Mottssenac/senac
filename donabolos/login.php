@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dona Bolos - Login</title>
+    <title>Dona Bólos - Login</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -54,10 +54,10 @@
         <div class="w-full max-w-lg text-center p-8 bg-transparent">
             
             <h1 class="text-6xl font-normal text-white tracking-widest mb-2">
-                LOGIN
+                LÓGIN
             </h1>
             <p class="text-lg text-background-primary mb-12 uppercase opacity-80">
-                Acesse sua conta Dona Bolos
+                Acesse sua conta Dona Bólos
             </p>
 
             

@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dona Bolos - Mainpage</title>
+    <title>Dona Bólos - Mainpage</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
   
@@ -61,7 +61,7 @@
         
     
         <h1 class="hero-text text-4xl sm:text-6xl font-normal text-text-primary mb-10 tracking-tight">
-            APRECIE O MELHOR DA CONFEITARIA PARA O SEU BOLO!
+            APRECIE O MELHOR DA CONFEITARIA PARA O SEU BÓLO!
         </h1>
 
         <div class="flex flex-col space-y-4">
@@ -73,7 +73,7 @@
             
             <a href="login.php" 
                class="flex items-center justify-center w-60 py-4 px-6 rounded-xl text-lg font-semibold text-white bg-button-bg shadow-md transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg">
-                LOGIN
+                LÓGIN
             </a>
 
             <?php
